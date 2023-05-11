@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import '../dist/output.css'
+import '../outCSS/output.css'
 
 
 function App() {

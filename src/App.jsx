@@ -63,16 +63,16 @@ function App() {
 
   return (
     <div className="App h-full w-full bg-gradient-to-r from-cyan-500 to-blue-500 flex flex-col justify-center items-center">
-      <div className="flex flex-col h-3/5 w-3/5 bg-white rounded-lg justify-center items-center">
+      <div className="flex flex-col h-3/5 w-4/5 lg:w-3/5 bg-white rounded-lg justify-center items-center">
         {/* text to prove */}
-        <div className="flex flex-row justify-evenly items-start w-3/4 h-auto p-2 ">
-          <input className="w-3/5 h-10 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 pl-2" ref={textInputRef}  type="text" placeholder="Insert text" />
+        <div className="flex flex-col lg:flex-row justify-evenly items-start w-3/4 h-auto p-2 ">
+          <input className="w-full lg:w-3/5 h-10 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 pl-2 mb-2" ref={textInputRef}  type="text" placeholder="Insert text" />
           <button className="w-1/5 h-10 rounded-lg bg-blue-500 text-white font-bold focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" onClick={()=>speakHandler()} >Speak</button>
         </div>
 
 
         {/* controls for voice utterance */}
-        <div className="flex flex-row justify-evenly items-center w-3/4 h-1/3 p-2">
+        <div className="flex flex-col lg:flex-row justify-evenly items-center w-full lg:w-3/4 h-1/3 p-2">
           <select className="w-2/5 h-10 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-blue-500 pl-2"  ref={selectRef}>
             {voices.map((voice, index) => {
               return <option key={index} value={voice.name}>{voice.name}</option>

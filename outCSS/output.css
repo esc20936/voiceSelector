@@ -522,6 +522,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -562,12 +566,12 @@ video {
   width: 60%;
 }
 
-.w-full {
-  width: 100%;
+.w-4\/5 {
+  width: 80%;
 }
 
-.flex-row {
-  flex-direction: row;
+.w-full {
+  width: 100%;
 }
 
 .flex-col {
@@ -684,4 +688,18 @@ body, html,#root {
 
 .focus\:ring-opacity-50:focus {
   --tw-ring-opacity: 0.5;
+}
+
+@media (min-width: 1024px) {
+  .lg\:w-3\/5 {
+    width: 60%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
 }
